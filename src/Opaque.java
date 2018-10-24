@@ -1,4 +1,5 @@
 import jdk.internal.cmm.SystemResourcePressureImpl;
+import jdk.nashorn.tools.Shell;
 import util.*;
 
 import java.time.LocalDate;
@@ -8,7 +9,7 @@ import static java.lang.System.*;
 public class Opaque implements Demo{
     public static void main(String []args){
         int [] a = {1,3,2,14,5,10,8};
-        System.out.println( "一共移动了："+HalfInsertingSort.sort(a)+"次");
+        System.out.println( "一共移动了："+ ShellSort.sort(a)+"次");
         System.out.println(Arrays.toString(a));
     }
     static class Employee {
