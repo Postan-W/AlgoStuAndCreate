@@ -1,7 +1,9 @@
 package util;
+
 /**
  @author Shiyi Won
  @time 2018.10.24
+ @name 归并排序
  */
 public class MergeSort {
     //用于分割序列

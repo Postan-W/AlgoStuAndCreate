@@ -1,5 +1,9 @@
 package util;
-
+/**
+ @author Shiyi Won
+ @time 2018.10.25
+ @name 冒泡排序
+ */
 public class PopSort {
     public static int popSort(int [] array){
         int count =0;

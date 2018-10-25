@@ -1,5 +1,9 @@
 package util;
-//默认升序
+/**
+ * @author Shiyi Won
+ * @time 2018.10.25
+ * @name 快速排序
+ */
 public class QuickSort {
     public static void quickSort(int [] array,int low,int high) {
         int tag1 = low;

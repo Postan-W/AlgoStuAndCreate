@@ -1,9 +1,15 @@
+/**
+ @author Shiyi Won
+ @time 2018.10.25
+ @name 字符栈
+ */
+
 public class Stack {
     private char [] number;
     private int top;
     public Stack(int maxSize){
         this.number = new char[maxSize];
-            this.top = -1;
+        this.top = -1;
     }
     public char[] getArray(){
         return this.number;
@@ -17,7 +23,7 @@ public class Stack {
         return 'e';
     }
     public void push(char c){
-        if (++top >this.number.length){
+        if ((top + 1) >this.number.length){
             System.out.println("栈已满");
             return;
         }

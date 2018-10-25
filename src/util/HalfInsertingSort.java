@@ -1,4 +1,9 @@
 package util;
+/**
+ @author Shiyi Won
+ @time 2018.10.25
+ @name 折半插入排序
+ */
 public class HalfInsertingSort {
     public static int sort(int [] array){
         int count = 0;

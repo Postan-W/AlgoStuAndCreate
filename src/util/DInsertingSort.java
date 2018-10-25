@@ -1,5 +1,9 @@
 package util;
-
+/**
+ @author Shiyi Won
+ @time 2018.10.25
+ @name 直接插入排序
+ */
 public class DInsertingSort {
     public static int Sort(int [] array){
         int count =0;
