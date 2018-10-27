@@ -9,9 +9,8 @@ import static java.lang.System.*;
 public class PublicClass implements Demo{
     public static void main(String []args){
         int [] a = {1,3,2,14,5,10,8};
-        MergeSort.mergeSort(a,0,a.length -1);
-        System.out.println(Arrays.toString(a));
-        Tower_of_Hnaoi.hanoi(2,'f','s','t');
+        int [] b = Arrays.copyOf(a,20);
+        System.out.println(Arrays.toString(b));
     }
     static class Employee {
         private String name;
