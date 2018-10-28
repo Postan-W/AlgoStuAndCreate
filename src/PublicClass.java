@@ -9,8 +9,9 @@ import static java.lang.System.*;
 public class PublicClass implements Demo{
     public static void main(String []args){
         int [] a = {1,3,2,14,5,10,8};
-        int [] b = Arrays.copyOf(a,20);
-        System.out.println(Arrays.toString(b));
+      //  HeapSort.heapSort(a,a.length);
+        HeapSort.heapSort(a,a.length);
+        //System.out.println(Arrays.toString(heap.getArray()));
     }
     static class Employee {
         private String name;

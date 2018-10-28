@@ -1,6 +1,7 @@
 package util;
 /**
  @author Shiyi Won
+ 注意堆的重要特征是一颗完全二叉树，即叶子节点只能出现在最后一层和倒数第一层，也就是说元素必须依次排布构建树，不能留空
  */
 //构建堆与其操作
 public class Heap {
@@ -8,6 +9,34 @@ public class Heap {
     private int count; //元素个数
     private int capacity;//堆的大小
     private int heap_type;//1表示大根堆，0表示小根堆，下面的函数没有加判断条件，默认把堆当作大根堆
+
+    public void setArray(int[] array) {
+        this.array = array;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public void setHeap_type(int heap_type) {
+        this.heap_type = heap_type;
+    }
+
+    public int[] getArray() {
+        return array;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
 
     public Heap(int capacity, int heap_type){
         this.heap_type = heap_type;
@@ -26,8 +55,8 @@ public class Heap {
         }
         heap.count = n;
         //因为叶子节点满足堆的条件，所以从最后一个节点的父节点开始堆化各个元素
-        //节点的高度和是n-h-1 = n -logn - 1,所以时间复杂度为O(n)
-        for (int i= (n -1 -1)/2;i>=0;i++){
+        //对非叶子节点堆化，节点的高度和是 n-h-1 = n -logn - 1,所以时间复杂度为O(n)
+        for (int i=(n-1-1)/2;i>=0;i--){
             heap.percolateDown(i);
         }
 
@@ -49,7 +78,7 @@ public class Heap {
     }
 
     public int rightChild(int i){
-        int right = 2*i + 1;
+        int right = 2*i + 2;
         if(right >= this.count){
             return -1;
         }
