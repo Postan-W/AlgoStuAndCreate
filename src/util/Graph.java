@@ -78,7 +78,7 @@ public class Graph {
         然后再取出头部那个节点，重复这样的操作。因为一个节点的相邻节点也有可能相邻，所以也要判断是否被访问过
      */
     public void BFS(int k){
-        Queue<Integer> queue = new LinkedList<Integer>();//linkedlist既可以作队列㛑可以作栈，这取决于引用的类型
+        Queue<Integer> queue = new LinkedList<Integer>();//linkedlist既可以作队列也可以作栈，这取决于引用的类型
         int u;
         queue.add(k);
         this.visited[k] = 1;
