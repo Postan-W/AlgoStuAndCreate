@@ -9,10 +9,9 @@ import static java.lang.System.*;
 public class PublicClass implements Demo{
 
     public static void main(String []args){
-      char [] data = {'a','b','c','d'};
-      int [][] weight = {{0,1,0,1},{1,0,1,1},{0,1,0,0},{1,1,0,0}};
-      Graph graph = new Graph(data,weight);
-      graph.BFS(0);
+      int []a = {1,2,3,34,2,25,13};
+      int count = BucketSort.bucketSort(a);
+      System.out.print(Arrays.toString(a)+"时间复杂度是:"+count);
     }
 }
 
