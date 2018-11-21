@@ -3,6 +3,7 @@ package util;
  桶排序。利用一个容积为要排序列中最大数的‘桶’来表示要排序列中元素出现的次数。即用
  桶的下标来记录待排序列的元素，某个元素出现n次，那么桶的这个位置的值即是n。
  */
+//桶排序的效率非常低，比如只有两个数，而且存在数值很大的数，那么桶排序就是浪费空间
 public class BucketSort {
     public static int bucketSort(int [] array){
         //先找出数组中的最大元素
